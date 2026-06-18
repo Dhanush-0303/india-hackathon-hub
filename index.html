@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>India Hackathon Hub</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div class="splash">
+  <img src="assets/logo.png" width="120" alt="Logo">
+  <h1>India Hackathon Hub</h1>
+  <p>Find Hackathons Across India</p>
+</div>
+
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("sw.js")
+      .then(() => console.log("Service Worker Registered"))
+      .catch(err => console.error("Service Worker registration failed:", err));
+  }
+
+  setTimeout(() => {
+    window.location.href = "login.html";
+  }, 3000);
+</script>
+
+</body>
+</html>

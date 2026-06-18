@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home - Hackathons</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>🔥 Hackathons</h2>
+
+<input type="text" id="searchBox" placeholder="Search hackathons..." onkeyup="searchHackathons()">
+
+<br><br>
+
+<select id="filter" onchange="filterHackathons()">
+  <option value="all">All</option>
+  <option value="Online">Online</option>
+  <option value="Offline">Offline</option>
+</select>
+
+<div id="hackathonList"></div>
+
+<script type="module" src="js/app.js"></script>
+
+</body>
+</html>
